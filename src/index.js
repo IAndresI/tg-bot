@@ -261,7 +261,7 @@ const start = async () => {
               },
             },
             [Op.and]: appState.user.isAdmin
-              ? undefined
+              ? {}
               : {
                   "$achievements.isApproved$": true,
                 },
